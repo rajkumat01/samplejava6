@@ -1,4 +1,4 @@
-    def appName='App_1'
+    def appName='App_2'
     def snapName=''
     def deployName ='Dep_1'
     def exportFormat ='json'
@@ -18,7 +18,7 @@ pipeline {
         stage('Clone repository') {               
            steps{
                 // checkout scm
-                git branch: 'master', url: 'https://github.com/rajkumat01/samplejava1'
+                git branch: 'master', url: 'https://github.com/rajkumat01/samplejava6'
            }
         }     
         stage('Upload JSON'){
@@ -108,8 +108,8 @@ pipeline {
     
     post {
         success {
-            echo 'Run E2ESamplePipeLine1_1!'
-            build job: 'E2ESamplePipeLine1_1', parameters: [string(name: 'MY_PARAM', value: 'value from Build pipeline')]
+            echo 'Run E2ESamplePipeLine6_1!'
+            build job: 'E2ESamplePipeLine6_1', parameters: [string(name: 'MY_PARAM', value: 'value from Build pipeline')]
         }
     }
 }
