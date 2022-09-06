@@ -1,4 +1,4 @@
-    def appName='App_2'
+    def appName='App_6'
     def snapName=''
     def deployName ='Dep_1'
     def exportFormat ='json'
